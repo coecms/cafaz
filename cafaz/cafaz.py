@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 
 
-class cafeaws(object):
+class Cafaz(object):
     def __init__(
         self, varname, realm, time_res, json_root="/g/data/w35/ccc561/CAFE60/json"
     ):

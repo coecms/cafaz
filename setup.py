@@ -1,14 +1,14 @@
 from setuptools import setup
 
 setup(
-    name="cafeaws",
+    name="cafaz",
     version="0.1.0",
     description="To read CAFE60 on AWS from NCI",
     url="https://github.com/coecms/CAFEAWS",
     author="Claire Carouge",
     author_email="c.carouge@unsw.edu.au",
     license="Apache 2.0",
-    packages=["cafeaws"],
+    packages=["cafaz"],
     install_requires=[
         "xarray",
         "dask",
