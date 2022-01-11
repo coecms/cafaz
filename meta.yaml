@@ -1,0 +1,29 @@
+{% set version = "0.1.0" %}
+
+package:
+  name: cafaz
+  version: {{ version }}
+
+source:
+    path: .
+
+
+build:
+    script: "{{ PYTHON }} -m pip install . --no-deps"
+    noarch: python
+    number: {{ GIT_DESCRIBE_NUMBER }}
+
+
+requirements:
+    host:
+        - python >=3.9
+        - pip
+    run:
+        - python >=3.9
+        - dask 
+        - netcdf4
+        - xarray
+        - s3fs
+        - fsspec
+        - ujson
+        - kerchunk
