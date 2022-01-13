@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="cafaz",
-    version="0.1.0",
+    version="0.2.0",
     description="To read CAFE60 on AWS from NCI",
     url="https://github.com/coecms/CAFEAWS",
     author="Claire Carouge",
