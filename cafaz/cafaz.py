@@ -103,6 +103,7 @@ class Cafaz(object):
                 YYYY or YYYY-mm or YYYY-mm-dd."""
 
         loc_list = full_list.copy()
+        new_list = loc_list
 
         # Only modify the list if period is provided.
         # Assumes the CAFE60 naming convention for the filenames:
@@ -113,7 +114,7 @@ class Cafaz(object):
             start_period, end_period = Cafaz.date_to_YYYYmmdd(period)
 
             new_list = []
-            for ind_file, my_path in enumerate(loc_list):
+            for my_path in loc_list:
                 file_dates = my_path.stem.split(".")[4]
                 file_start = int(file_dates.split("-")[0])
                 file_end = int(file_dates.split("-")[1])
